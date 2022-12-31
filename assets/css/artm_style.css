@@ -1,0 +1,241 @@
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    
+    font-size: 15px;
+    line-height: 1.6;
+    color: #333;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4 ,h5, h6 {
+    margin: 0;
+}
+
+
+/* Contain */
+
+.contain {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Intro */
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    
+    background: url("../link_img/artmimg.jpg") center no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+
+.intro_in {
+    width: 100%;
+    max-width: 880px;
+    margin: 0 auto;
+    
+    text-align: center;
+}
+
+.intro_title {
+    color: #fff;
+    font-size: 40px;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 1;
+}
+
+.intro_title:after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    margin: 60px auto;
+    
+    background-color: #fff;
+}
+
+.intro_suptitle {
+    margin-bottom: 20px;
+    
+    font-family: 'Kaushan Script', cursive;
+    font-size: 52px;
+    color: #fff;
+}
+
+/* Head */
+
+.head {
+    width: 100%;
+    padding-top: 30px;
+    
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    font-family: 'Gabriola', cursive;
+}
+
+.head.fixed {
+    padding: 10px 0;
+    
+    background-color: #d8a0fe;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    
+    transform: translate3d(0, 0, 0);
+}
+
+.head_in {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.head_log {
+    font-size: 35px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.section {
+    padding: 80px 0;
+}
+
+
+.section_head {
+    width: 100%;
+    max-width: 950px;
+    margin: 0 auto 40px;
+    text-align: center;
+    
+}
+
+.suptitle {
+    font-size: 24px;
+    color: #333;
+    font-family: 'Segoe Script', sans-serif; 
+}
+
+.title {
+    font-size: 30px;
+    font-weight: 700;
+    color: #333;
+    text-transform: uppercase;
+    font-family: 'Segoe Script', sans-serif;
+}
+
+.title:after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    margin: 30px auto;
+}
+
+
+
+
+.info{
+    margin-top: 80px;
+    display: flex;
+    margin-left: 0 auto;
+}
+
+.about {
+    font-size: 20px;
+    font-family: 'Segoe Script', cursive;
+    margin: 0 50;
+}
+
+.info1{
+    margin-top: 80px;
+    display: flex;
+    margin-left: 0 20;
+}
+
+.about1 {
+    font-size: 25px;
+    font-family: 'Segoe Script', cursive;
+    margin: 0 35;
+}
+
+.coll {
+    margin-top: 80px;
+    display: flex;
+    margin-left: 0 auto;
+}
+}
+
+.din {
+    width: 220px;
+    position: relative;
+    
+}
+
+.img {
+    float: left;
+    padding-left: 0px;
+    padding-bottom: 10px;
+    margin: 0 90;
+}
+
+.pouring {
+    font-size: 20px;
+    line-height: 50px;
+    font-family: 'Segoe Script', sans-serif;
+    font-weight: 900;
+    position: relative;
+    background: white;
+    overflow: hidden;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0 35;
+}
+.pouring:before {
+    content: '';
+    position: absolute;
+    filter: blur(10px);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    mix-blend-mode: screen;
+    background-image: repeating-linear-gradient(-45deg, transparent, transparent 1em, #01e9bd 1em, #01e9bd 50%), repeating-linear-gradient(45deg, #007cde, #007cde 1em, #FFF 1em, #01e9bd 50%);
+    background-size: 3em 3em, 2em 2em;
+    animation-name: ani;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes ani {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: 100% 0;
+    }
+}
+@media (max-width:690px) {    
+    .pouring {font-size: 20px;}    
+}
+
+
+
