@@ -1,0 +1,531 @@
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+
+    font-size: 15px;
+    line-height: 1.6;
+    color: #333;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+
+/* Container */
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+
+/* Intro */
+.intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+
+    background: url("../images/back.jpg") center no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+
+.intro__inner {
+    width: 100%;
+    max-width: 880px;
+    margin: 0 auto;
+
+    text-align: center;
+}
+
+.intro__title {
+    color: #fff;
+    font-size: 50px;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 1;
+}
+
+.intro__title:after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    margin: 60px auto;
+
+    background-color: #fff;
+}
+
+.intro__suptitle {
+    margin-bottom: 20px;
+
+    font-family: 'Kaushan Script', cursive;
+    font-size: 68px;
+    color: rgba(255,255,255,0.6);
+}
+
+
+/* Header */
+.header {
+    width: 100%;
+    padding-top: 30px;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    font-family: 'Gabriola', cursive;
+}
+
+.header.fixed {
+    padding: 10px 0;
+
+    background-color: #d8a0fe;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    transform: translate3d(0, 0, 0);
+}
+
+
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__logo {
+    font-size: 35px;
+    font-weight: 700;
+    color: #fff;
+}
+
+
+/* Nav */
+.nav {
+    font-size: 23px;
+    text-transform: uppercase;
+    font-family: 'Gabriola', cursive;
+}
+
+.nav__link {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 15px;
+    position: relative;
+
+    color: #fff;
+    text-decoration: none;
+
+    transition: color .1s linear;
+}
+
+.nav__link:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 3px;
+
+    background-color: #1aeccc;
+    opacity: 0;
+
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+
+    transition: opacity .1s linear;
+}
+
+.nav__link:hover {
+    color: #1aeccc;
+}
+
+.nav__link:hover:after {
+    opacity: 1;
+}
+
+.nav__link.active {
+    color: #1aeccc;
+}
+
+
+/* Button 
+.btn {
+    display: inline-block;
+    vertical-align: top;
+    padding: 8px 30px;
+
+    border: 3px solid #fff;
+
+    font-size: 14px;
+    font-weight: 700;
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+
+    transition: background .1s linear, color .1s linear;
+}
+
+.btn:hover {
+    background-color: #fff;
+    color: #333;
+}
+
+ План Б */
+
+
+/* Династия */
+
+.section {
+    padding: 80px 0;
+}
+
+.section_header {
+    width: 100%;
+    max-width: 950px;
+    margin: 0 auto 40px;
+    text-align: center;
+    
+}
+
+.suptitle {
+    font-size: 24px;
+    color: #333;
+    font-family: 'Segoe Script', sans-serif; 
+}
+
+.title {
+    font-size: 30px;
+    font-weight: 700;
+    color: #333;
+    text-transform: uppercase;
+    font-family: 'Segoe Script', sans-serif;
+}
+
+.title:after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    margin: 30px auto;
+}
+
+.text {
+    text-align: left;
+    color: black;
+    font-size: 17px;
+}
+
+
+/* Фото и инфа */
+
+
+
+
+/*.drevo{
+    background: linear-gradient(to bottom, #fedc45, #fb7099);
+    transition: transform .2s linear;
+}
+
+
+.din:hover .drevo img {
+    opacity: .6;
+}
+
+.drevo img {
+    display: block;
+    transition: opacity .3s linear;
+}
+
+*/
+
+/* Список и переход по ссылке */
+
+.tochki {
+    font-family: 'Segoe Script', cursive;
+    margin-left: 20px;
+    color: black;
+}
+
+.tochki_in {
+    font-size: 20px;
+}
+
+.tochki_ul {
+    font-size: 20px;
+}
+
+.spisok {
+    font-size: 18px;
+}
+
+
+.link {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 15px;
+    position: relative;
+    
+    color: black;
+    text-decoration: none;
+    
+    transition: color .2s linear;
+}
+
+/*
+.link:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 3px;
+    
+    background-color: #1aeccc;
+    opacity: 0;
+    
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+    
+    transition: opacity .2s linear;
+}
+*/
+
+.link:hover {
+    color: #972ae6;
+}
+
+.link:hover:after {
+    opacity: 1;
+}
+
+.link.active {
+    color: #972ae6;
+}
+
+
+.coll {
+    margin-top: 80px;
+    display: flex;
+    margin-left: 0 auto;
+}
+}
+
+.din {
+    width: 220px;
+    position: relative;
+    
+}
+
+.img {
+    float: left;
+    padding-left: 30px;
+    padding-bottom: 10px;
+    margin: 0 90;
+}
+
+
+.coll1 {
+    margin-top: 80px;
+    display: flex;
+    margin-left: 0 auto;
+}
+}
+
+.din1 {
+    width: 220px;
+    position: relative;
+    
+}
+
+.img1 {
+    float: left;
+    padding-left: 30px;
+    padding-bottom: 10px;
+    margin: 0 90;
+}
+
+
+.coll2 {
+    margin-top: 80px;
+    display: flex;
+    margin-left: 0 auto;
+}
+}
+
+.din2 {
+    width: 220px;
+    position: relative;
+    
+}
+
+.img2 {
+    float: left;
+    padding-left: 30px;
+    padding-bottom: 10px;
+    margin: 0 90;
+}
+
+
+.coll3 {
+    margin-top: 80px;
+    display: flex;
+    margin-left: 0 auto;
+}
+}
+
+.din3 {
+    width: 220px;
+    position: relative;
+    
+}
+
+.img3 {
+    float: left;
+    padding-left: 30px;
+    padding-bottom: 10px;
+    margin: 0 90;
+}
+
+
+
+.coll4 {
+    margin-top: 80px;
+    display: flex;
+    margin-left: 0 auto;
+}
+}
+
+.din4 {
+    width: 220px;
+    position: relative;
+    
+}
+
+.img4 {
+    float: left;
+    padding-left: 30px;
+    padding-bottom: 10px;
+    margin: 0 90;
+}
+
+
+
+.coll5 {
+    margin-top: 80px;
+    display: flex;
+    margin-left: 0 auto;
+}
+}
+
+.din5 {
+    width: 220px;
+    position: relative;
+    
+}
+
+.img5 {
+    float: left;
+    padding-left: 30px;
+    padding-bottom: 10px;
+    margin: 0 90;
+}
+
+
+
+.info{
+    margin-top: 80px;
+    display: flex;
+    margin-left: 0 auto;
+}
+
+.about {
+    font-size: 20px;
+    font-family: 'Segoe Script', cursive;
+    margin: 0 50;
+}
+
+
+.prosh{
+    margin-top: 80px;
+    display: flex;
+    margin-left: 0 auto;
+}
+
+.pred_img {
+    font-size: 20px;
+    font-family: 'Segoe Script', cursive;
+    margin: 0 20;
+}
+
+.pouring {
+    font-size: 20px;
+    line-height: 50px;
+    font-family: 'Segoe Script', sans-serif;
+    font-weight: 900;
+    position: relative;
+    background: white;
+    overflow: hidden;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0 35;
+}
+.pouring:before {
+    content: '';
+    position: absolute;
+    filter: blur(10px);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    mix-blend-mode: screen;
+    background-image: repeating-linear-gradient(-45deg, transparent, transparent 1em, #12d6df 1em, #12d6df 50%), repeating-linear-gradient(45deg, #f70fff, #f70fff 1em, #FFF 1em, #12d6df 50%);
+    background-size: 3em 3em, 2em 2em;
+    animation-name: ani;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes ani {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: 100% 0;
+    }
+}
+@media (max-width:690px) {    
+    .pouring {font-size: 20px;}    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
